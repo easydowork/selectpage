@@ -1,0 +1,29 @@
+{
+    "name": "easydowork/selectpage",
+    "description": "a select widget tools for yii2",
+    "keywords": ["yii", "select", "widget","bootstrap","bootstrap 3"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "easydowork",
+            "email": "254364502@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "*",
+        "bower-asset/selectpage": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "easydowork\\selectpage\\": "./src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
