@@ -1,6 +1,6 @@
 {
     "name": "easydowork/selectpage",
-    "description": "a select widget tools for yii2",
+    "description": "a select tools for yii2",
     "keywords": ["yii", "select", "widget","bootstrap","bootstrap 3"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
