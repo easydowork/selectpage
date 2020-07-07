@@ -66,7 +66,7 @@ class SelectPage extends InputWidget
 
         $id = $this->options['id'];
 
-        $view->registerJs("jQuery('#{$id}').selectPage($jsonPluginOptions);");
+        $view->registerJs("jQuery('#{$id}').selectPage({$jsonPluginOptions});");
     }
 
     /**
