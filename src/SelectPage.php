@@ -30,10 +30,7 @@ class SelectPage extends InputWidget
             $this->name = !isset($this->options['name']) ? Html::getInputName($this->model,$this->attribute) : $this->options['name'];
 
             $this->value = !isset($this->options['value']) ? Html::getAttributeValue($this->model,$this->attribute) : $this->options['value'];
-        }else{
-            $this->options['id'] = !isset($this->options['id'])?$this->getId():$this->options['id'];
         }
-
     }
 
     /**
