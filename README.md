@@ -66,8 +66,3 @@ echo \easydowork\selectpage\SelectPage::widget([
     ]
 ]);
 ```
-
-```shell script
-php yii rbac/back-up
-php yii rbac/update
-```
