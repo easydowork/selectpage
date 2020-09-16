@@ -34,7 +34,7 @@ class SelectPageAssets extends AssetBundle
      */
     public function init()
     {
-        $this->js[] = YII_DEBUG ? 'selectpage.js' : 'js/selectpage.min.js';
+        $this->js[] = YII_DEBUG ? 'selectpage.js' : 'selectpage.min.js';
     }
 
 }
