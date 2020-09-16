@@ -33,6 +33,27 @@ https://terryz.gitee.io/selectpage/demo.html
 //这里的示例数据，有些节点不是必须的，最重要的是list和totalRow两个节点必须存在
 //所以在上面的代码中，设置了eAjaxSuccess的回调中将data节点
 //返回，因为在该节点下存在list和totalRow两个数据项
+$pageSize = 10;
+
+$model = Model::find()
+    ->select(['id','name'])
+    ->andFilterWhere(['like','name',post('name')])
+    ->andFilterWhere(['id' => post('searchValue')]);
+
+$pages = new Pagination(['totalCount' => $model->count(), 'pageSize' => $pageSize]);
+
+$pages->setPage(post('pageNumber')-1);
+
+$list = $model->offset($pages->offset)->limit($pages->limit)->all();
+
+$data = [
+    "pageSize" => $pages->pageSize,
+    "pageNumber" => $pages->getPage(),
+    "totalRow" => $pages->totalCount,
+    "totalPage" => $pages->pageCount,
+    "list" => $list
+];
+
 {
     "ret":1,
     "data": {
