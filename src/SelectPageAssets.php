@@ -11,11 +11,6 @@ use yii\web\AssetBundle;
 class SelectPageAssets extends AssetBundle
 {
     /**
-     * @var string
-     */
-    public $sourcePath = '@bower/jquery/selectpage';
-
-    /**
      * @var array
      */
     public $css = [
@@ -34,6 +29,8 @@ class SelectPageAssets extends AssetBundle
      */
     public function init()
     {
+        $this->sourcePath = __DIR__.'/dist';
+
         $this->js[] = YII_DEBUG ? 'selectpage.js' : 'selectpage.min.js';
     }
 

@@ -43,7 +43,7 @@ class SelectPage extends InputWidget
 
         $this->registerClientScript();
 
-        if(!empty($this->value) && $this->options['multiple']){
+        if(!empty($this->value) && $this->pluginOptions['multiple']){
             if(is_array($this->value)){
                 $this->value = implode(',',$this->value);
             }

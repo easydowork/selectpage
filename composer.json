@@ -13,17 +13,10 @@
     "minimum-stability": "stable",
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/selectpage": "*"
     },
     "autoload": {
         "psr-4": {
             "easydowork\\selectpage\\": "./src"
         }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ]
+    }
 }
